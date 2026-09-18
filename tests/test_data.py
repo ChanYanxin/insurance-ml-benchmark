@@ -1,5 +1,6 @@
 import pandas as pd
 import pytest
+
 from insurance_ml.data import add_high_cost_target, load_insurance_csv
 
 

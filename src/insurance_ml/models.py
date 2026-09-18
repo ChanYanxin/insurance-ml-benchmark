@@ -1,12 +1,12 @@
 from __future__ import annotations
 
 from sklearn.base import BaseEstimator
+from sklearn.ensemble import RandomForestRegressor
 from sklearn.linear_model import LinearRegression, LogisticRegression
 from sklearn.neural_network import MLPClassifier
+from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestRegressor
-from sklearn.pipeline import Pipeline
 
 from .config import RANDOM_STATE
 from .features import build_preprocessor

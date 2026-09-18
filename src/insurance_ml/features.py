@@ -1,11 +1,11 @@
 from __future__ import annotations
 
 from sklearn.compose import ColumnTransformer
+from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
-from sklearn.impute import SimpleImputer
 
-from .config import NUMERIC_FEATURES, CATEGORICAL_FEATURES
+from .config import CATEGORICAL_FEATURES, NUMERIC_FEATURES
 
 
 def build_preprocessor() -> ColumnTransformer:

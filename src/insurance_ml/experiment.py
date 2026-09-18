@@ -6,11 +6,11 @@ from pathlib import Path
 
 from sklearn.model_selection import train_test_split
 
-from .config import FEATURES, RANDOM_STATE, TARGET_REGRESSION
-from .data import load_insurance_csv, add_high_cost_target
-from .models import build_classifier, build_regressor
-from .evaluate import evaluate_classifier, evaluate_regressor
 from .clustering import cluster_numeric_profiles
+from .config import FEATURES, RANDOM_STATE, TARGET_REGRESSION
+from .data import add_high_cost_target, load_insurance_csv
+from .evaluate import evaluate_classifier, evaluate_regressor
+from .models import build_classifier, build_regressor
 
 
 def run_benchmark(data_path: str | Path) -> dict:

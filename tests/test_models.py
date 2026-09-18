@@ -1,9 +1,9 @@
-from pathlib import Path
 import subprocess
 import sys
+from pathlib import Path
 
-from insurance_ml.data import add_high_cost_target, load_insurance_csv
 from insurance_ml.config import FEATURES
+from insurance_ml.data import add_high_cost_target, load_insurance_csv
 from insurance_ml.models import build_classifier, build_regressor
 
 

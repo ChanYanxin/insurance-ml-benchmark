@@ -1,9 +1,10 @@
 from __future__ import annotations
 
 from pathlib import Path
+
 import pandas as pd
 
-from .config import FEATURES, TARGET_REGRESSION, HIGH_COST_THRESHOLD
+from .config import FEATURES, HIGH_COST_THRESHOLD, TARGET_REGRESSION
 
 REQUIRED_COLUMNS = set(FEATURES + [TARGET_REGRESSION])
 

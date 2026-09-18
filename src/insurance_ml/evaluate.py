@@ -1,17 +1,18 @@
 from __future__ import annotations
 
-from dataclasses import dataclass, asdict
+from dataclasses import asdict, dataclass
 from typing import Any
+
 import pandas as pd
 from sklearn.metrics import (
     accuracy_score,
-    precision_score,
-    recall_score,
     f1_score,
-    roc_auc_score,
     mean_absolute_error,
     mean_squared_error,
+    precision_score,
     r2_score,
+    recall_score,
+    roc_auc_score,
 )
 
 
